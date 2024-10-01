@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla y Tarjetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .table-container {
+            flex: 1;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sección de la tabla -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 7</td>
+                        <td>Dato 8</td>
+                        <td>Dato 9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección de tarjetas -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Tarjeta 1</h3>
+                <p>Contenido de la tarjeta 1.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 2</h3>
+                <p>Contenido de la tarjeta 2.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 3</h3>
+                <p>Contenido de la tarjeta 3.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen y Tarjetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .image-container {
+            flex: 1;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sección de la imagen -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen de ejemplo">
+        </div>
+
+        <!-- Sección de tarjetas -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Tarjeta 1</h3>
+                <p>Contenido de la tarjeta 1.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 2</h3>
+                <p>Contenido de la tarjeta 2.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 3</h3>
+                <p>Contenido de la tarjeta 3.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico</title>
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
